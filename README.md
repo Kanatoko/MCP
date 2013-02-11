@@ -1,8 +1,10 @@
 MCP(Multi Core Parser)
+================================
 
 Java framework for multicore-aware log parsing
 
--Build
+Build
+-------------------------
 ant build
 
 -Run
