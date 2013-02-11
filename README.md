@@ -15,6 +15,7 @@ echo -e 'foo\nbar\baz' | java -cp output/mcp.jar net.jumperz.app.MCP.MCP UpperCa
 -Implement
 Your class need to implement the 'net.jumperz.io.multicore.MParser' interface like below.
 
+'''Java
 public class UpperCase
 implements net.jumperz.io.multicore.MParser
 {
@@ -25,3 +26,4 @@ return s.toUpperCase();
 }
 //---------------------------------------------
 }
+'''
