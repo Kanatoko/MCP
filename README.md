@@ -18,7 +18,7 @@ echo -e 'foo\nbar\baz' | java -cp output/mcp.jar net.jumperz.app.MCP.MCP UpperCa
 
 How to implement your parser
 -------------------------
-Your class need to implement the 'net.jumperz.io.multicore.MParser' interface like below.
+Your class needs to implement the 'net.jumperz.io.multicore.MParser' interface like below.
 
 ```Java
 public class UpperCase
