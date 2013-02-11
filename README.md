@@ -3,6 +3,10 @@ MCP(Multi Core Parser)
 
 Java framework for multicore-aware log parsing
 
+Download Binary
+-------------------------
+http://www.jumperz.net/tools/mcp.jar
+
 Build
 -------------------------
 ant build
