@@ -18,7 +18,7 @@ cat YOUR_TEXT_FILE | java -cp output/mcp.jar net.jumperz.app.MCP.MCP YOUR_CLASS_
 
 Example
 -------------------------
-echo -e 'foo\nbar\baz' | java -cp output/mcp.jar net.jumperz.app.MCP.MCP UpperCase
+echo -e 'foo\nbar\nbaz' | java -cp output/mcp.jar net.jumperz.app.MCP.MCP UpperCase
 
 How to implement your parser
 -------------------------
