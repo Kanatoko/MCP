@@ -28,6 +28,11 @@ throws IOException
 reader = new BufferedReader( new InputStreamReader( in, charset ) );
 }
 //--------------------------------------------------------------------------------
+public void setBatchSize( int i )
+{
+batchSize = i;
+}
+//--------------------------------------------------------------------------------
 public synchronized Map getLines()
 throws IOException
 {

@@ -37,6 +37,21 @@ this.charset = "ISO-8859-1";
 init();
 }
 //--------------------------------------------------------------------------------
+public void setThreadCount( int i )
+{
+threadCount = i;
+}
+//--------------------------------------------------------------------------------
+public void setBatchSize( int i )
+{
+if( i < 10 )
+	{
+	//too small. igored
+	return;
+	}
+reader.setBatchSize( i );
+}
+//--------------------------------------------------------------------------------
 private void init()
 throws IOException
 {
