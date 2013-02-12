@@ -1,20 +1,21 @@
 package net.jumperz.io.multicore.example;
 
+import java.util.regex.Pattern;
 import net.jumperz.io.multicore.MParser;
 
-public class MGrep
+public class MEGrep
 implements MParser
 {
-private String pattern;
+private Pattern pattern;
 //--------------------------------------------------------------------------------
-public MGrep()
+public MEGrep()
 {
-pattern = System.getProperty( "grep" );
+pattern = Pattern.compile( System.getProperty( "egrep" ) );
 }
 //--------------------------------------------------------------------------------
 public String parse( String s )
 {
-if( s.indexOf( pattern ) > -1 )
+if( pattern.matcher( s ).find() )
 	{
 	return s;
 	}

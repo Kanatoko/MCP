@@ -28,8 +28,11 @@ while( true )
 		for( int i = 0; i < list.size(); ++i )
 			{
 			String line = ( String )list.get( i );
-			out.write( line.getBytes( charset ) );
-			out.write( ( byte ) 0x0A );
+			if( line != null )
+				{
+				out.write( line.getBytes( charset ) );
+				out.write( ( byte ) 0x0A );
+				}
 			}
 		out.flush();
 		++writeIndex;
