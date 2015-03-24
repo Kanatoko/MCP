@@ -7,7 +7,6 @@ import java.lang.reflect.*;
 import net.jumperz.net.*;
 import net.jumperz.net.exception.*;
 import java.util.zip.*;
-import com.sun.image.codec.jpeg.*;
 
 import java.awt.image.BufferedImage;
 
